@@ -1,6 +1,4 @@
 require 'sinatra/base'
-# require_relative 'lib/player'
-# require_relative 'lib/game'
 
 class RockPaperScissors < Sinatra::Base
   enable :sessions
@@ -20,6 +18,7 @@ get '/play' do
   @player_2_name = session[:player_2_name]
   erb :play
 end
+
 
 run! if app_file == $0
 end

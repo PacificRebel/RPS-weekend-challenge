@@ -1,5 +1,21 @@
 <center>
 
+<h1>
 <%= @player_1_name %> v <%= @player_2_name %>
+</h1>
 
+<h2>
+<%= @player_1_name %>, what is your move: rock, paper or scissors?<br>
+<br>
+
+<form action="/select">
+  Rock: <br>
+  <input type="radio" name="choice" value="rock"><br>
+  Paper: <br>
+  <input type="radio" name="choice" value="paper"><br>
+  Scissors: <br>
+  <input type="radio" name="choice" value="scissors"><br>
+<br>
+  <input type="submit" value="Shoot!">
+  </h2>
 <center>
