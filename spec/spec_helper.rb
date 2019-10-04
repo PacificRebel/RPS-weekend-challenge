@@ -5,9 +5,9 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
-require 'features/web_helpers'
+# require 'features/web_helpers'
 
-Capybara.app = RPS
+Capybara.app = RockPaperScissors
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
