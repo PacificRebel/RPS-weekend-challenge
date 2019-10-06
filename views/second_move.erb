@@ -1,17 +1,19 @@
-<!-- <center>
+<center>
 
 <h2>
-And <#%= @player_2_name %>, your turn: rock, paper or scissors?<br>
+And <%= @player_2_name %>, your turn: rock, paper or scissors?<br>
 <br>
 
-<form action="/second_move" method="post">
+<form action="/result">
   Rock: <br>
   <input type="radio" name="choice" value="rock"><br>
   Paper: <br>
   <input type="radio" name="choice" value="paper"><br>
   Scissors: <br>
   <input type="radio" name="choice" value="scissors"><br>
+  </form>
 <br>
+<form action="/result">
   <input type="submit" value="Shoot!">
   </h2>
-<center> -->
+  </form>

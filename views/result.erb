@@ -1,0 +1,23 @@
+<center>
+
+  <% if @player_1_wins %>
+  <h1>
+  <%= @player_1_name %>, you win!!<br>
+    </h1>
+
+  <% elsif @player_2_wins %>
+    <h1>
+  <% @player_2_name %>, you win!!<br>
+
+  <% else %> "It's a draw!"
+  <% end %>
+  <br>
+
+<h1>
+  <form action="/">
+  Play again?
+  <br>
+  <br>
+    <input type="submit" value="New game">
+  </h1>
+  <center>
