@@ -8,9 +8,9 @@ class Game
     @game = Game.new(player_1_name, player_2_name)
   end
 
-    def self.instance
-      @game
-    end
+  def self.instance
+    @game
+  end
 
   def initialize(player_1_name, player_2_name)
     @player_1_name = player_1_name
@@ -43,28 +43,3 @@ class Game
       end
     end
 end
-  #
-  #
-  # def result
-  #   if player_1_move == "rock" && player_2_move == "scissors"
-  #     puts "Player 1 wins!"
-  #   end
-  #   if player_1_move == "rock" && player_2_move == "paper"
-  #     puts "Player 2 wins"
-  #   end
-  #   if player_1_move == "scissors" && player_2_move == "rock"
-  #     puts "Player 2 wins"
-  #   end
-  #   if player_1_move == "scissors" && player_2_move == "paper"
-  #     puts "Player 1 wins"
-  #   end
-  #   if player_1_move == "paper" && player_2_move == "rock"
-  #     puts "Player 1 wins"
-  #   end
-  #   if player_1_move == "paper" && player_2_move == "scissors"
-  #     puts "Player 2 wins"
-  #   end
-  #   if player_1_move == player_2_move
-  #     puts "It's a draw"
-  #   end
-  # end

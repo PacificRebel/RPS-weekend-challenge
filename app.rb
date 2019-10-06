@@ -1,6 +1,6 @@
 require 'sinatra/base'
-require 'lib/player'
-require 'lib/game'
+require_relative 'lib/player'
+require_relative 'lib/game'
 
 class RockPaperScissors < Sinatra::Base
   enable :sessions
@@ -28,12 +28,11 @@ get '/second_move' do
 end
 
 get '/result' do
-  @player_1_name.calculation = params[:player_1_name]
-  @player_2_name.calculation = params[:player_2_name]
-  # Player.result
+  # @player_1_name.calculation = params[:player_1_name]
+  # @player_2_name.calculation = params[:player_2_name]
+  # # Player.result
   # how do I get player_1_name's radio button choice here?
-  # something.result from lib/player will give me winner
-
+  # something.result from lib/game will give me winner
   erb :result
 end
 
